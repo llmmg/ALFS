@@ -1,0 +1,23 @@
+----to know what's the scripts call orders-----
+
+chapter2
+
+version-check.sh
+library-check.sh
+
+createPartition.sh
+setLfsVar.sh
+
+mountPartition.sh
+
+
+chapter 3
+
+chp3Intro.sh
+
+chapter 4
+
+createLfs_ToolsDir.sh
+addLfsUsr.sh
+
+
