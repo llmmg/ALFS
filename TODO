@@ -1,0 +1,8 @@
+=> edit createPartition.sh to verify that the given partition isn't the 
+Boot partition.
+
+this cmd get the partition where Linus is mount
+mount | grep " on / " | cut -d " " -f 1
+
+# cut is used to take first word (so /dev/xxx)
+
