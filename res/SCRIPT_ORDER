@@ -5,7 +5,8 @@ chapter2
 version-check.sh
 library-check.sh
 
-createPartition.sh
+#this take one parameter: name device
+createPartition.sh 
 setLfsVar.sh
 
 mountPartition.sh
@@ -19,5 +20,13 @@ chapter 4
 
 createLfs_ToolsDir.sh
 addLfsUsr.sh
+
+4.4 setting up the environment
+
+setUpEnv.sh
+
+
+
+Chapter 5
 
 
