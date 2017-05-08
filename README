@@ -1,3 +1,15 @@
 ~~~~~~~~README~~~~
 files in . (ALFS/) are files that make an LFS automated...
 Files in res/ are needed files for LFS
+
+===NEEDED INSTALLS===
+>>for version-check.sh
+sudo apt-get install build-essential g++
+apt-get install bison
+apt-get install gawk
+
+sudo rm /bin/sh
+sudo ln -s /bin/bash /bin/sh
+
+put md5sums in $LFS/sources
+put wget-list in ALFS/res

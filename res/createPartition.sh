@@ -10,5 +10,5 @@ if [[ $MY_PATH == $1 ]]; then
     echo "WARNING!!!! given path is the directory of current installed os"
 else
     echo "$1 is correct"
-    mkfs.ext4 /dev/$1
+    sudo mkfs.ext4 /dev/$1
 fi

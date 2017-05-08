@@ -2,8 +2,7 @@
 # commands may need to be executed as root
 # /!\ WARNING may need tests
 
-
-sudo mkdir -v $LFS/sources
+mkdir -v $LFS/sources
 chmod -v a+wt $LFS/sources
 
 wget --input-file=wget-list --continue --directory-prefix=$LFS/sources
