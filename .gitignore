@@ -1,0 +1,5 @@
+## ALFS gitignore
+# ignore logfiles
+
+logFiles/
+*/logFiles/*

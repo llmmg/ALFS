@@ -6,6 +6,11 @@ if grep -q 'WARNING' logFiles/log3; then
 fi
 bash res/setLfsVar.sh
 bash res/mountPartition.sh $answer
+if grep -q 'ERROR' logFiles/mountPartLog; then
+    echo "mountPartition.sh script error, see mountPartLog"
+    exit 1
+fi
 
 echo "now log as root(su root) and execute next script (script3.sh)"
 
+su root

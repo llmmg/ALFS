@@ -1,10 +1,12 @@
 ## mount new partition on given device
 
-if [ $LFS == '/mnt/lfs' ]; then
+if [[ $LFS == '/mnt/lfs' ]]; then
     echo "LFS var is ok"
+    echo "LFS var is ok" > logFiles/mountPartLog
 else
-    echo "LFS var not set,please,\n type: export LFS=/mnt/lfs and\n re-launch this script"
-    exit 1
+    printf "LFS var not set. Please \n type: export LFS=/mnt/lfs and\n re-launch this script" 
+    echo "ERROR lfs var not set" > logFiles/mountPartLog
+    exit -1
 fi
 
 sudo mkdir -pv $LFS
