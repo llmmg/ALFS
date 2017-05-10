@@ -7,7 +7,7 @@ fi
 bash res/setLfsVar.sh
 bash res/mountPartition.sh $answer
 if grep -q 'ERROR' logFiles/mountPartLog; then
-    echo "mountPartition.sh script error, see mountPartLog"
+    printf "\n mountPartition.sh script error, see mountPartLog \n"
     exit 1
 fi
 
